@@ -1,5 +1,7 @@
 import React from 'react';
-import profilePic from '../assets/profileRBG.png'
+import profilePic from '../assets/profileRBG.png';
+import { ArrowDownTrayIcon } from '@heroicons/react/24/solid';
+import resumePDF from "../assets/pdf/resume.pdf";
 
 const Banner = () => {
     return (
@@ -16,6 +18,12 @@ const Banner = () => {
                     <span className='mr-2 text-indigo-700 font-medium'>Front end developer</span><span className='mr-2'>|</span>
                     <span className='mr-2 text-indigo-700 font-medium'>Junior full stack developer</span>
                 </div>
+                <button className='btn mt-4'>
+                    <a href={resumePDF} target="_blank" rel="noreferrer" className='flex items-center'>
+                        Download my resume
+                        <ArrowDownTrayIcon className='h-6 ml-2' />
+                    </a>
+                </button>
             </div>
         </div>
     );
