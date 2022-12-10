@@ -1,9 +1,9 @@
 import React from 'react';
 import EachProject from './EachProject';
-import image12 from '../../assets/projects/12.png';
-import image12Dashboard from '../../assets/projects/12_dashboard.png';
-import image11 from '../../assets/projects/11.png';
-import image10 from '../../assets/projects/10.png';
+import image12 from '../../../assets/projects/12.png';
+import image12Dashboard from '../../../assets/projects/12_dashboard.png';
+import image11 from '../../../assets/projects/11.png';
+import image10 from '../../../assets/projects/10.png';
 
 const MyProjects = () => {
     const projects = [

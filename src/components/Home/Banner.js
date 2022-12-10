@@ -1,7 +1,7 @@
 import React from 'react';
-import profilePic from '../assets/profileRBG.png';
+import profilePic from '../../assets/profileRBG.png';
 import { ArrowDownTrayIcon } from '@heroicons/react/24/solid';
-import resumePDF from "../assets/pdf/resume.pdf";
+import resumePDF from "../../assets/pdf/resume.pdf";
 
 const Banner = () => {
     return (
