@@ -10,7 +10,7 @@ const Banner = () => {
             <div>
                 <img src={profilePic} alt="profilePic" />
             </div>
-            <div className='flex justify-center items-center flex-col'>
+            <div className='flex justify-center items-center flex-col mt-4'>
                 <h4 className='font-bold'>Hello, I am</h4>
                 <h1 className='font-bold text-9xl lg:my-5'>Ashraf</h1>
                 <div>
