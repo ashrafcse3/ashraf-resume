@@ -3,6 +3,7 @@ import Banner from './components/Banner';
 import ContactUs from './components/ContactUs';
 import MyProjects from './components/MyProjects/MyProjects';
 import Navbar from './components/Navbar';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Banner />
       <MyProjects />
       <ContactUs />
+      <Toaster position='top-center' />
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai'
-import { FaStackOverflow } from 'react-icons/fa'
+import { FaStackOverflow } from 'react-icons/fa';
+import { toast } from 'react-hot-toast';
 
 const ContactUs = () => {
     const form = useRef();
@@ -18,6 +19,8 @@ const ContactUs = () => {
             .then((result) => {
                 console.log(result.text);
                 console.log(result);
+                toast.success('Your message received successfully');
+                form.current.reset();
             }, (error) => {
                 console.log(error.text);
             });
