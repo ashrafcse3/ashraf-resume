@@ -5,7 +5,6 @@ import TitleNLinks from './TitleNLinks';
 
 const ProjectDetails = () => {
     const project = useLoaderData();
-    console.log(project);
 
     return (
         <div className='mt-2'>
@@ -23,7 +22,7 @@ const ProjectDetails = () => {
                     </div>
                 </div>
                 <div>
-                    <TitleNLinks />
+                    <TitleNLinks project={project} />
                 </div>
             </div>
         </div>

@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Slider = ({ image, index, length }) => {
-
-    console.log(index);
     return (
         <div id={`slide${index}`} className="carousel-item relative w-full">
             <img src={image} className="w-full" alt={`alt: ${image}`} />
