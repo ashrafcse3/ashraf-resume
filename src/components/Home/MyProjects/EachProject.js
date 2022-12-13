@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const EachProject = ({ project: { title, images, _id } }) => {
+const EachProject = ({ project: { title, images, _id, } }) => {
     return (
         <div>
             <Link className='relative' to={`/project/${_id}`}>
