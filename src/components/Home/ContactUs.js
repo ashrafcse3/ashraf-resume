@@ -47,11 +47,11 @@ const ContactUs = () => {
                 </div>
                 <form ref={form} onSubmit={sendEmail} className='my-6 flex flex-col'>
                     {/* <label>Name</label> */}
-                    <input type="text" name="user_name" placeholder='Your name' className='px-2 py-5 border-b border-grey' />
+                    <input required type="text" name="user_name" placeholder='Your name' className='px-2 py-5 border-b border-grey' />
                     {/* <label>Email</label> */}
-                    <input type="email" name="user_email" placeholder='Your email' className='mt-2 px-2 py-5 border-b border-grey' />
+                    <input required type="email" name="user_email" placeholder='Your email' className='mt-2 px-2 py-5 border-b border-grey' />
                     {/* <label>Message</label> */}
-                    <textarea name="message" placeholder='How we can help you' className='mt-2 px-2 py-3  border-b border-grey' rows='7' />
+                    <textarea required name="message" placeholder='How we can help you' className='mt-2 px-2 py-3  border-b border-grey' rows='7' />
                     <input type="submit" value="Send your message" className='btn btn-primary mt-4 capitalize' />
                 </form>
             </div>
