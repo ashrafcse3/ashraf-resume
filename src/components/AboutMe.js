@@ -1,10 +1,9 @@
 import React from 'react';
+import ComingSoon from './ComingSoon';
 
 const AboutMe = () => {
     return (
-        <div>
-            About me section
-        </div>
+        <ComingSoon text='About me' />
     );
 };
 

@@ -1,10 +1,9 @@
 import React from 'react';
+import ComingSoon from './ComingSoon';
 
 const Blogs = () => {
     return (
-        <div>
-            Blogs
-        </div>
+        <ComingSoon text='Blog' />
     );
 };
 

@@ -2,7 +2,8 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 import { FaStackOverflow } from 'react-icons/fa';
-import { toast } from 'react-hot-toast';
+import { toast, Toaster } from 'react-hot-toast';
+import { Link } from 'react-router-dom';
 
 const ContactUs = () => {
     const form = useRef();
@@ -28,6 +29,7 @@ const ContactUs = () => {
 
     return (
         <div className='my-8'>
+            <Toaster position='top-center' />
             <h1 className='text-center text-3xl font-bold'>Contact US</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 mt-8'>
                 <div className='flex justify-between flex-col mb-10'>
@@ -38,10 +40,14 @@ const ContactUs = () => {
                         <p>Tel: +4407533775656</p>
                         <p>Email: ashrafcse3@gmail.com</p>
                         <div className='flex'>
-                            <AiFillGithub className='mr-2' />
-                            <AiFillLinkedin className='mr-2' />
-                            <FaStackOverflow className='mr-2' />
+                            <a target='_blank' rel='noreferrer' href='https://github.com/ashrafcse3?tab=repositories'><AiFillGithub className='mr-2' /></a>
+                            <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/ashrafcse3/'><AiFillLinkedin className='mr-2' /></a>
+                            <a target='_blank' rel='noreferrer' href='https://stackoverflow.com/users/13788415/ashraful-alam'><FaStackOverflow className='mr-2' /></a>
+                            {/* <a target='_blank' rel='noreferrer' href=''> <AiOutlineTwitter className='' /></a> */}
                             <AiOutlineTwitter className='' />
+
+
+
                         </div>
                     </div>
                 </div>
