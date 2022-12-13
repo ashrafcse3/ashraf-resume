@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const menu = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/allproject'>All Projects</Link></li>
+        <li><Link to='/blogs'>Blogs</Link></li>
         <li><Link to='/aboutme'>About me</Link></li>
     </>;
     return (
         <div className="navbar bg-base-100 shadow-lg h-20">
             <div className="navbar-start">
-                <span className="btn btn-ghost normal-case text-xl">Ashraful Alam</span>
+                <Link to="/"><span className="btn btn-ghost normal-case text-xl">Ashraful Alam</span></Link>
             </div>
             <div className="navbar-end">
                 <div className='hidden lg:flex'>

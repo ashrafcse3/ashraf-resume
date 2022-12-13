@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import Slider from './Slider';
 import TitleNLinks from './TitleNLinks';
 
+
 const ProjectDetails = () => {
     const project = useLoaderData();
 
@@ -24,6 +25,10 @@ const ProjectDetails = () => {
                 <div>
                     <TitleNLinks project={project} />
                 </div>
+            </div>
+            <div className='mt-4 p-4'>
+                <h2 className='text-2xl font-bold'>Project Description</h2>
+                <div dangerouslySetInnerHTML={{ __html: project.description }} />
             </div>
         </div>
     );

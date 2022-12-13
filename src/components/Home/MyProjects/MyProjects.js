@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import EachProject from './EachProject';
 import image12 from '../../../assets/projects/12.png';
 import image12Dashboard from '../../../assets/projects/12_dashboard.png';
@@ -6,24 +6,31 @@ import image11 from '../../../assets/projects/11.png';
 import image10 from '../../../assets/projects/10.png';
 
 const MyProjects = () => {
-    const projects = [
-        {
-            name: 'auto parts',
-            image: image12
-        },
-        {
-            name: 'auto parts dashboard',
-            image: image12Dashboard
-        },
-        {
-            name: 'Eye specialist',
-            image: image11
-        },
-        {
-            name: 'English Gugu',
-            image: image10
-        },
-    ];
+    const [projects, setProjects] = useState();
+
+    useEffect(() => {
+        fetch('http://localhost:4000/projects')
+            .then(res => res.json())
+            .then(data => setProjects(data))
+    }, []);
+    // const projects = [
+    //     {
+    //         name: 'auto parts',
+    //         image: image12
+    //     },
+    //     {
+    //         name: 'auto parts dashboard',
+    //         image: image12Dashboard
+    //     },
+    //     {
+    //         name: 'Eye specialist',
+    //         image: image11
+    //     },
+    //     {
+    //         name: 'English Gugu',
+    //         image: image10
+    //     },
+    // ];
 
     return (
         <div className='mt-20 mb-5'>
