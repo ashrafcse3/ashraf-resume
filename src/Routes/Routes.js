@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
             {
                 path: '/project/:id',
                 element: <ProjectDetails />,
-                loader: ({ params }) => fetch(`http://localhost:4000/project/${params.id}`)
+                loader: ({ params }) => fetch(`https://ashraf-resume-server2.vercel.app/project/${params.id}`)
             },
             {
                 path: '/aboutme',

@@ -9,7 +9,7 @@ const MyProjects = () => {
     const [projects, setProjects] = useState();
 
     useEffect(() => {
-        fetch('http://localhost:4000/projects')
+        fetch('https://ashraf-resume-server2.vercel.app/projects')
             .then(res => res.json())
             .then(data => setProjects(data))
     }, []);
